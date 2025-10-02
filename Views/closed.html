@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We're Closed - Business Website</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>BusinessCo</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="closed-section">
+            <div class="container">
+                <div class="closed-content">
+                    <h1>🚫 We're Currently Closed</h1>
+                    <p>Our website is only available during working hours:</p>
+                    <div class="hours-info">
+                        <p><strong>Monday - Friday: 9:00 AM - 5:00 PM</strong></p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                    <p>Please visit us again during our business hours. Thank you for your understanding!</p>
+                    <div class="current-time">
+                        <p>Current time: <span id="currentTime"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 BusinessCo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentTime').textContent = new Date().toString();
+    </script>
+</body>
+</html>
